@@ -34,13 +34,16 @@ const response = await fetch(`${API_BASE_URL}/api/auth/login`, {    method: "POS
 };
 
 export const sendForgotPasswordOtp = async (email) => {
-  fetch(`${API_BASE_URL}/api/auth/forgot-password/send-otp`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email }),
-  });
+  const response = await fetch(
+    `${API_BASE_URL}/api/auth/forgot-password/send-otp`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    }
+  );
 
   return parseResponse(response);
 };
