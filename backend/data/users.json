@@ -1,0 +1,34 @@
+[
+  {
+    "uid": "usr_9fa402d79f844d78",
+    "fullName": "SARVESH CHOUGULE",
+    "email": "sarveshnchougule@gmail.com",
+    "company": null,
+    "passwordHash": "$2b$10$WFx8v2W4l3ggS8eQFAWtmucxgXftOml332OX01KxttcErJEzxm04u",
+    "role": "member",
+    "isActive": true,
+    "isEmailVerified": true,
+    "passwordResetOtp": null,
+    "passwordResetOtpExpiry": null,
+    "lastLogin": "2026-06-30T02:40:26.469Z",
+    "loginCount": 1,
+    "createdAt": "2026-06-30T02:40:26.469Z",
+    "updatedAt": "2026-06-30T02:40:26.469Z"
+  },
+  {
+    "uid": "usr_77e3699a04494dcf",
+    "fullName": "Pramod Maloji",
+    "email": "pramodmaloji96@gmail.com",
+    "company": null,
+    "passwordHash": "$2b$10$jXxFo53eWQHipQaQtYdAfe7SZDE7sI.ju2258.DCdt0q26lO1pXPu",
+    "role": "member",
+    "isActive": true,
+    "isEmailVerified": true,
+    "passwordResetOtp": null,
+    "passwordResetOtpExpiry": null,
+    "lastLogin": "2026-06-30T09:53:50.449Z",
+    "loginCount": 2,
+    "createdAt": "2026-06-30T09:33:10.445Z",
+    "updatedAt": "2026-06-30T09:53:50.449Z"
+  }
+]
