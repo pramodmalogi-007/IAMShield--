@@ -1,3 +1,6 @@
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+
 const parseResponse = async (response) => {
   const data = await response.json().catch(() => ({}));
 
@@ -9,8 +12,7 @@ const parseResponse = async (response) => {
 };
 
 export const signupUser = async (payload) => {
-  const response = await fetch("/api/auth/signup", {
-    method: "POST",
+const response = await fetch(`${API_BASE_URL}/api/auth/signup`, {    method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
@@ -21,8 +23,7 @@ export const signupUser = async (payload) => {
 };
 
 export const loginUser = async (payload) => {
-  const response = await fetch("/api/auth/login", {
-    method: "POST",
+const response = await fetch(`${API_BASE_URL}/api/auth/login`, {    method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
@@ -33,7 +34,7 @@ export const loginUser = async (payload) => {
 };
 
 export const sendForgotPasswordOtp = async (email) => {
-  const response = await fetch("/api/auth/forgot-password/send-otp", {
+  fetch(`${API_BASE_URL}/api/auth/forgot-password/send-otp`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +46,7 @@ export const sendForgotPasswordOtp = async (email) => {
 };
 
 export const verifyForgotPasswordOtp = async (email, otp) => {
-  const response = await fetch("/api/auth/forgot-password/verify-otp", {
+  const response = await fetch(`${API_BASE_URL}/api/auth/forgot-password/verify-otp`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -57,7 +58,7 @@ export const verifyForgotPasswordOtp = async (email, otp) => {
 };
 
 export const resetPasswordWithOtp = async (email, otp, password, confirmPassword) => {
-  const response = await fetch("/api/auth/forgot-password/reset-password", {
+  const response = await fetch(`${API_BASE_URL}/api/auth/forgot-password/reset-password`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -69,7 +70,7 @@ export const resetPasswordWithOtp = async (email, otp, password, confirmPassword
 };
 
 export const loginWithGoogle = async (credential) => {
-  const response = await fetch("/api/auth/google", {
+  const response = await fetch(`${API_BASE_URL}/api/auth/google`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
