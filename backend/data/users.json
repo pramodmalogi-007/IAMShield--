@@ -20,15 +20,15 @@
     "fullName": "Pramod Maloji",
     "email": "pramodmaloji96@gmail.com",
     "company": null,
-    "passwordHash": "$2b$10$jXxFo53eWQHipQaQtYdAfe7SZDE7sI.ju2258.DCdt0q26lO1pXPu",
+    "passwordHash": "$2b$10$xwPLcA/jI7DbHDCLp50SK.tu.ulKVWQptWQ1iK2I1eqisR6Uw5.kW",
     "role": "member",
     "isActive": true,
     "isEmailVerified": true,
-    "passwordResetOtp": null,
-    "passwordResetOtpExpiry": null,
-    "lastLogin": "2026-06-30T09:53:50.449Z",
-    "loginCount": 2,
+    "passwordResetOtp": "740870",
+    "passwordResetOtpExpiry": "2026-06-30T15:01:46.024Z",
+    "lastLogin": "2026-06-30T14:27:06.962Z",
+    "loginCount": 4,
     "createdAt": "2026-06-30T09:33:10.445Z",
-    "updatedAt": "2026-06-30T09:53:50.449Z"
+    "updatedAt": "2026-06-30T14:51:46.025Z"
   }
 ]
